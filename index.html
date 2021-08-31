@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+  <html>
+<head>
+       <title>the saddest zoumba</title>
+	   <link rel="shortcut icon" href="Other/img.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="use.fontawesome.com/releases/v5.6.1/css/all.css">
+ 	      <link rel="stylesheet" type="text/css" href="css/Cstyle.css">
+ 	      <link rel="stylesheet" type="text/css" href="css/bg-animation.css">
+ 	      <!-- js scripts -->
+        <script src="js/AnimatedTitle.js"></script>
+        <script src="js/BlockInspect.js"></script>
+    </head>
+    
+    
+    
+    
+<body>
+  <input type="text" name="Element To Be Copied" id="copy-me" value="mrv8x#0001"/>
+  <div id="background" style="opacity: 0.1"></div>
+  <div id="bg" class="bg-animation"></div>
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <div id='stars4'></div>
+  <div id="background" style="opacity: 0.1"></div>
+  <div id="player" style="position: fixed; z-index: -99; width: 100%; background-color: black; opacity: 1"></div>
+  </div>
+  </div>
+ 
+  
+      <div class="dropdown">
+  <button id="myBtn" class="dropbtn">&#9776;</button>
+  <div id="myDropdown" class="dropdown-content">
+  <a>mrv8x projects:</a>
+  <a href="https://mrv8x.online">!HELPDOGS</a>
+  <a href="https://ohmyzoumba.herokuapp.com/">Zoumba Discord Music Bot</a>
+  <a>idont know but (soon)</a>
+  
+
+  </div>
+  </div>
+
+
+
+<video playsinline loop>
+			<source src="Other/AnimeMain.mp4" type="video/mp4"></source>
+		</video>
+
+  <div class="container">
+  <div class="center">
+    <div id="another" style="display:none;">
+      <center><h1 class="center2">mrv8x &#12483;</h1></center>
+      </div>
+    <center><button href="join1.html" id="button"><h1>Click Here =)</h1></button></center>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      const video = document.querySelector("video");
+      
+      button.addEventListener("click", () => {
+        if (video.paused) {
+          video.play();
+      
+        } else {
+          video.pause();
+        }
+      });
+      $("#button").on("click", function(){
+      $(this).hide();
+      $("#test").hide();
+      $("#another").fadeIn("slow");
+      return false;
+     });
+          </script>
+  
+ 
+  <br>
+  <div class="links">
+
+    <li><a href="https://www.instagram.com/mrv8x/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+    <li><button id="botona"><a target="_blank"><i class="fab fa-discord fa-2x"></i></a></button></li>
+	    <li><a href="https://www.twitch.tv/mrv8x/" target="_blank"><i class="fab fa-twitch fa-2x"></i></a></li>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <script>
+  document.getElementById("myBtn").onclick = function() {myFunction()};
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  }
+  </script>
+  
+  <style>
+    
+      
+      html, body{ height: 100%; margin: 0; padding: 0;}
+#background {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
+.container-fluid{margin: 0; padding: 0; height: 100%;}
+.embed-responsive{height: 100%;}
+  </style>
+
+
+
+  <script>
+        var copyBtn   = $("#botona"),
+    input     = $("#copy-me");
+
+function copyToClipboardFF(text) {
+  window.prompt ("Copy to clipboard: Ctrl C, Enter", text);
+}
+
+function copyToClipboard() {
+  var success   = true,
+      range     = document.createRange(),
+      selection;
+
+  if (window.clipboardData) {
+    window.clipboardData.setData("Text", input.val());        
+  } else {
+    var tmpElem = $('<div>');
+    tmpElem.css({
+      position: "absolute",
+      left:     "-1000px",
+      top:      "-1000px",
+    });
+    tmpElem.text(input.val());
+    $("body").append(tmpElem);
+    range.selectNodeContents(tmpElem.get(0));
+    selection = window.getSelection ();
+    selection.removeAllRanges ();
+    selection.addRange (range);
+    try { 
+      success = document.execCommand ("copy", false, null);
+    }
+    catch (e) {
+      copyToClipboardFF(input.val());
+    }
+    if (success) {
+      alert ("Discord ID Copied to clipboard! (mrv8x#0001)");
+      // remove temp element.
+      tmpElem.remove();
+    }
+  }
+}
+
+copyBtn.on('click', copyToClipboard);
+
+
+
+    //document.getElementById("botona").onclick = function() { };
+  </script>
+    </body>
+  
+
+</html>
+

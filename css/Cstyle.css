@@ -1,0 +1,282 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+img.center {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display:block;
+    position: relative;
+    top: 200px;
+}
+#copy-me {
+  display:none
+}
+h1.center2 {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-family: "Myriad Pro";
+    text-align: center;
+    top: 70px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+a.center3 {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    font-family: "Calibri Light";
+    text-align: center;
+    top: 80px;
+    position: relative;
+    font-size: 25px;
+    color: #EEB300;
+}
+#test h1 {
+    margin-top: 25px;
+    font-size: 45px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+h1 {
+  letter-spacing: 2px;
+  font-size: 4em;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 65px/normal "Chau Philomene One", Helvetica, sans-serif;
+  color: rgb(237, 234, 234);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 3px;
+  text-shadow: -3px 0 1px rgb(30,242,241) , 3px 0 1px rgb(246,5,10);
+  transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+}
+h1:hover {
+  color: rgb(51, 51, 51);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  cursor: default;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: #000000;
+}
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.video {
+    overflow: hidden;
+}
+.video-fallback {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.center {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.Ucenter {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.links {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+li, address {
+  margin-right: 10px;
+  display: inline;
+  cursor: pointer;
+}
+a {
+  position: relative;
+  font-size: 1.1em;
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 5px rgba(238, 238, 238, 0.88);
+}
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid white;
+  transition: 0.4s;
+}
+a:hover:after {
+  width: 100%;
+}
+address {
+  font-style: normal;
+}
+h1, li {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+   user-select: none; /* Standard */
+}
+body {
+  background: black;
+  overflow: hidden;
+}
+
+body, html {
+  cursor: url("../reimu.cur"), pointer;
+  height: 100%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+
+.dott {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  right: 20
+
+}
+
+.dropbtn {
+    background-color: #ffffff00;
+    color: white;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 110px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      outline-width: 2px;
+  outline-style: solid;
+  outline-color: black;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 17px;
+    text-decoration: none;
+    display: block;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: black;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
